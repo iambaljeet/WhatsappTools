@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.app.whatsapptools.MainActivities.DrawerActivity"
+    tools:showIn="@layout/app_bar_drawer">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_margin="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <RelativeLayout
+                android:id="@+id/relative_container_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_bar_3"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="@dimen/padd_15"
+                android:paddingBottom="@dimen/padd_15"
+                android:transitionName="relative_container_1_transition"
+                tools:ignore="UnusedAttribute"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_repeat_black_24dp"
+                    android:tint="@color/colorWhite"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:text="@string/repeat_menu"/>
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_container_2"
+                    android:layout_below="@+id/relative_container_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/gradient_bar_2"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="@dimen/padd_15"
+                    android:paddingBottom="@dimen/padd_15"
+                    android:transitionName="relative_container_2_transition"
+                    tools:ignore="UnusedAttribute"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:src="@drawable/ic_cloud_download_black_24dp"
+                        android:tint="@color/colorWhite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="40dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:text="@string/stories_menu"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_container_3"
+                    android:layout_below="@+id/relative_container_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_bar_1"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="@dimen/padd_15"
+                    android:paddingBottom="@dimen/padd_15"
+                    android:transitionName="relative_container_3_transition"
+                    tools:ignore="UnusedAttribute"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_message_black_24dp"
+                        android:tint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="40dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:text="@string/send_message"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_below="@+id/relative_container_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/more_coming"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/drawer_banner">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Whatsapp Tools</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="save_successful_message">Saved To Gallery!</string>
+    <string name="save_error_message">Could not save,Try again later</string>
+    <string name="title_pics">You have not watched any whatsapp status currently ,Once you watch a whatsapp status, it will automatically show here for you to download</string>
+    <string name="title_videos">Vids</string>
+    <string name="title_videos2">Vids</string>
+
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="home">Home</string>
+
+    <string name="repeat_menu">Repeat Message</string>
+    <string name="stories_menu">Download Stories</string>
+    <string name="message_menu">Message W/O Number</string>
+    <string name="more_menu">More</string>
+    <string name="save_number">Save number in Application</string>
+    <string name="send_message">Open/Start Whatsapp Chat</string>
+    <string name="number_note">Please enter number you want to chat to (Including Country Code without \'+\' symbol)</string>
+    <string name="saved_numbers">Select from saved contacts</string>
+    <string name="delete">Delete</string>
+    <string name="tagline">One App For All Your Needs</string>
+    <string name="more_coming">More coming soon</string>
+
+    <string name="share_app_subject">Yo! Check out %s</string>
+    <string name="share_app_body">Check out %1$s, this wallpaper app is really cool! %2$s</string>
+
+    <string name="email_client">Choose Client</string>
+    <string name="rate_review"><![CDATA[Rate & Review]]></string>
+    <string name="share">Share</string>
+
+    <string name="add_app_id">ca-app-pub-1008028300916848~5553542762</string>
+    <string name="drawer_banner">ca-app-pub-1008028300916848/2352664357</string>
+    <string name="no_number_home_banner">ca-app-pub-1008028300916848/5278210598</string>
+    <string name="story_home_banner">ca-app-pub-1008028300916848/2143591425</string>
+    <string name="text_repeater_home_banner">ca-app-pub-1008028300916848/2899459265</string>
+    <string name="text_repeater_share_banner">ca-app-pub-1008028300916848/9983742367</string>
+    <string name="exit_interstitial">ca-app-pub-1008028300916848/3865535508</string>
+</resources>
