@@ -91,17 +91,13 @@ public class StoryDownloaderActivity extends AppCompatActivity {
             }
         });
 
-        checkPermission();
-
-        final CarouselLayoutManager layoutManager = new CarouselLayoutManager(CarouselLayoutManager.VERTICAL, true);
-        layoutManager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
-
         mRecyclerViewMediaList = (RecyclerView) findViewById(R.id.recyclerViewMedia);
         mLinearLayoutManager = new LinearLayoutManager(this);
-        mRecyclerViewMediaList.setLayoutManager(layoutManager);
+        mRecyclerViewMediaList.setLayoutManager(mLinearLayoutManager);
         System.out.println("......"+ Environment.getExternalStorageDirectory().toString());
         mRecyclerViewMediaList.addOnScrollListener(new CenterScrollListener());
 
+        checkPermission();
     }
 
 
