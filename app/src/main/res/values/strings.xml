@@ -35,11 +35,11 @@
     <string name="rate_review"><![CDATA[Rate & Review]]></string>
     <string name="share">Share</string>
 
-    <string name="add_app_id">ca-app-pub-1008028300916848~5553542762</string>
-    <string name="drawer_banner">ca-app-pub-1008028300916848/2352664357</string>
-    <string name="no_number_home_banner">ca-app-pub-1008028300916848/5278210598</string>
-    <string name="story_home_banner">ca-app-pub-1008028300916848/2143591425</string>
-    <string name="text_repeater_home_banner">ca-app-pub-1008028300916848/2899459265</string>
-    <string name="text_repeater_share_banner">ca-app-pub-1008028300916848/9983742367</string>
-    <string name="exit_interstitial">ca-app-pub-1008028300916848/3865535508</string>
+    <string name="add_app_id">app_id_here</string>
+    <string name="drawer_banner">add_id_here</string>
+    <string name="no_number_home_banner">add_id_here</string>
+    <string name="story_home_banner">add_id_here</string>
+    <string name="text_repeater_home_banner">add_id_here</string>
+    <string name="text_repeater_share_banner">add_id_here</string>
+    <string name="exit_interstitial">add_id_here</string>
 </resources>
