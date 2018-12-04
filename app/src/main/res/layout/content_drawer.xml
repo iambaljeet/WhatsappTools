@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.app.whatsapptools.MainActivities.DrawerActivity"
+    tools:context="com.app.wptools.MainActivities.DrawerActivity"
     tools:showIn="@layout/app_bar_drawer">
 
 
@@ -148,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        ads:adSize="SMART_BANNER"
+        ads:adSize="BANNER"
         ads:adUnitId="@string/drawer_banner">
     </com.google.android.gms.ads.AdView>
 

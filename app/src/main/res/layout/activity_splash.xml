@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.app.whatsapptools.MainActivities.SplashActivity">
+    tools:context="com.app.wptools.MainActivities.SplashActivity">
 
     <ImageView
         android:layout_width="wrap_content"

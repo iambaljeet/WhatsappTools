@@ -9,12 +9,6 @@
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#ffffff</color>
 
-    <color name="colorPrimaryText">#212121</color>
-    <color name="colorSecondaryText">#757575</color>
-    <color name="colorIcons">#ffffff</color>
-    <color name="colorDivider">#BDBDBD</color>
-
     <color name="bg_row_background">#fa315b</color>
     <color name="item_name">#535353</color>
-    <color name="description">#a9a9a9</color>
 </resources>

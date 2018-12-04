@@ -133,7 +133,7 @@ belongs to their respective owners only."
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        ads:adSize="SMART_BANNER"
+        ads:adSize="BANNER"
         ads:adUnitId="@string/text_repeater_share_banner">
     </com.google.android.gms.ads.AdView>
 

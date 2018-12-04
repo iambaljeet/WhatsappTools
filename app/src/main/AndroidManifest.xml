@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.app.whatsapptools">
+    package="com.app.wptools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -9,6 +9,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,7 +19,7 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/add_app_id"/>
         <activity
-            android:name=".MainActivities.SplashActivity"
+            android:name="com.app.wptools.MainActivities.SplashActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,31 +28,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivities.DrawerActivity"
+            android:name="com.app.wptools.MainActivities.DrawerActivity"
             android:windowSoftInputMode="stateHidden"/>
         <activity
-            android:name=".StoryDownloader.StoryDownloaderActivity"
+            android:name="com.app.wptools.StoryDownloader.StoryDownloaderActivity"
             android:windowSoftInputMode="stateHidden"
             android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
             android:theme="@style/AppThemeNoBar" />
         <activity
-            android:name=".TextRepeater.Activities.MainActivity"
+            android:name="com.app.wptools.TextRepeater.Activities.MainActivity"
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppThemeNoBar" />
         <activity
-            android:name=".TextRepeater.Activities.RecentActivity"
+            android:name="com.app.wptools.TextRepeater.Activities.RecentActivity"
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppThemeNoBar" />
         <activity
-            android:name=".TextRepeater.Activities.ShareActivity"
+            android:name="com.app.wptools.TextRepeater.Activities.ShareActivity"
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppThemeNoBar" />
         <activity
-            android:name=".NoNumberMessage.Activities.MainActivity"
+            android:name="com.app.wptools.NoNumberMessage.Activities.MainActivity"
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppThemeNoBar" />
         <activity
-            android:name=".NoNumberMessage.Activities.SavedNumbersActivity"
+            android:name="com.app.wptools.NoNumberMessage.Activities.SavedNumbersActivity"
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar"/>
 
