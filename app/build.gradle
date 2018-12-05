@@ -43,11 +43,6 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
     implementation 'gun0912.ted:tedpermission:2.1.0'
 
-    implementation 'com.pixplicity.easyprefs:library:1.9.0'
-
-    implementation 'com.daimajia.easing:library:2.0@aar'
-    implementation 'com.daimajia.androidanimations:library:2.3@aar'
-
     implementation 'me.grantland:autofittextview:0.2.0'
 
     implementation 'com.hbb20:ccp:2.1.4'
