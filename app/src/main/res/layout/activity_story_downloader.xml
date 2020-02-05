@@ -30,7 +30,7 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:text="@string/title_pics" />
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewMedia"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

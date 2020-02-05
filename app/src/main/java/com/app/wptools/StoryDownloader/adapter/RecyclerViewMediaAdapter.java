@@ -4,8 +4,11 @@ import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
+import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.os.Environment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,13 +31,17 @@ import java.util.ArrayList;
 
 public class RecyclerViewMediaAdapter extends RecyclerView.Adapter<RecyclerViewMediaAdapter.FileHolder> implements EasyVideoCallback {
 
-    private static String DIRECTORY_TO_SAVE_MEDIA_NOW = "/storage/emulated/legacy/WSDownloader/";
+    private String DIRECTORY_TO_SAVE_MEDIA_NOW = "";
     private ArrayList<File> filesList;
     private Activity activity;
 
     public RecyclerViewMediaAdapter(ArrayList<File> filesList, Activity activity) {
         this.filesList = filesList;
         this.activity = activity;
+        File[] externalFilesDirs = ContextCompat.getExternalFilesDirs(activity, Environment.DIRECTORY_PICTURES);
+        if (externalFilesDirs.length > 0) {
+            DIRECTORY_TO_SAVE_MEDIA_NOW = externalFilesDirs[0].getAbsolutePath();
+        }
     }
 
     @Override

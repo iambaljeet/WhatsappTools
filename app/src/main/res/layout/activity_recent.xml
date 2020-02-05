@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".TextRepeater.Activities.RecentActivity">
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView_history"
         android:layout_margin="5dp"
         android:layout_width="match_parent"

@@ -2,20 +2,21 @@ package com.app.wptools.services;
 
 import android.util.Log;
 
+import androidx.annotation.NonNull;
+
 import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.FirebaseInstanceIdService;
+import com.google.firebase.messaging.FirebaseMessagingService;
 
 /**
  * Created by Baljeet on 27-01-2018.
  */
 
-public class FirebaseRegistation extends FirebaseInstanceIdService {
+public class FirebaseRegistation extends FirebaseMessagingService {
 
     private static final String TAG = "FirebaseApp";
 
     @Override
-    public void onTokenRefresh() {
-
+    public void onNewToken(@NonNull String s) {
         //Getting registration token of FCM
         String refreshedToken = FirebaseInstanceId.getInstance().getToken();
 
@@ -24,7 +25,6 @@ public class FirebaseRegistation extends FirebaseInstanceIdService {
 
         //send FCM token to web service
         sendRegistrationToServer(refreshedToken);
-
     }
 
     private void sendRegistrationToServer(String token) {
